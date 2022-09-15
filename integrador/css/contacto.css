@@ -1,0 +1,199 @@
+.contacto{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EEEFFB;
+}
+
+.contacto-txt{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.titulo{
+    height: 10%;
+    padding-bottom: 10px;
+}
+
+.contacto-txt h1{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 70px
+}
+
+.formulario{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    box-shadow: 0px 0px 10px rgb(18 8 81 / 10%);
+}
+
+.inp-lbl{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0px 3px 2px rgba(0,0,0,0.25);
+}
+
+.inp-lbl input{
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: #EEEFFB;
+    border-bottom: 1px solid var(--text-color);
+    box-shadow: 0px 17px 10px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 0px 17px 10px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 17px 10px 0px rgba(0,0,0,0.13);
+}
+
+.inp-lbl input:focus{
+    outline: none;
+}
+
+.inp-lbl textarea{
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #EEEFFB;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.inp-lbl textarea:focus{
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+
+}
+
+.contacto-btn{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-btn{
+    width: 100px;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    background: none;
+    border: 4px solid var(--primary-color);
+    color: var(--primary-color);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contacto-ubi{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.contacto-ubi iframe{
+    height: 100%;
+    width: 80%;
+}
+
+#borde{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(18 8 81 / 10%);
+}
+
+@media (min-width: 1440px) {
+    .contacto{
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .contacto-txt{
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario{
+        align-items: center;
+        width: 70%;
+        height: 70%;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .titulo h1{
+        font-size: 70px;
+    }
+
+    textarea{
+        padding: 0;
+    }
+
+    
+
+    .inp-lbl{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contacto-ubi{
+        width: 50%;
+        height: 100%;
+
+    }
+
+    #borde{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgb(18 8 81 / 10%);
+    }
+
+    .contacto-ubi iframe{
+        width: 80%;
+        height: 80%;
+
+    }
+
+    .c-btn{
+        margin: 0;
+    }
+}

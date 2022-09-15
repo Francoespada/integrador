@@ -1,0 +1,140 @@
+.sobre-nosotros{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/bg.jpg);
+}
+
+.sn-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+.sn-title-txt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sn-title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sn-title h1{
+    margin: auto;
+    font-size: 80px;
+    color: var(--theme-color);
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.6);
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.sn-title span{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.sn-txt-cont{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sn-txt{
+    width: 40%;
+    height: 30%;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--theme-color);
+    box-shadow: 0px 0px 10px rgba(9, 4, 41, 0.726);
+    transition: .5s;
+}
+
+
+
+.sn-txt p{
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+
+}
+
+.sn-txt:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sn-border p{
+    padding:40px 20px;
+    border-radius: 15px;
+}
+.sn-img{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    background-image: url(../img/SobreNosotros/devices-removebg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: .5s;
+}
+
+.figureArriba{
+    transform: translateY(2);
+}
+
+@media (min-width:320px) and (max-width: 1440px) {
+    .sn-cont{
+        flex-direction: column;
+    }
+
+    .sn-title-txt{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sn-title h1,span{
+        font-size: 50px;
+    }
+
+    .sn-txt{
+        width: 40%;
+        height: 300px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .sn-border{
+        margin: 10px 0;
+    }
+
+    .sn-txt p{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .sn-img{
+        width: 100%;
+        height: 30%;
+        background-size: contain;
+    }
+}

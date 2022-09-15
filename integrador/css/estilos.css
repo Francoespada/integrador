@@ -1,0 +1,18 @@
+:root{
+    --theme-color: #F1F6F9;
+    --primary-color: #FF6180;
+    --secundary-color: #F3F4F8;
+    --text-color: #9BA4B4;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}

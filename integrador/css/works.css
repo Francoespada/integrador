@@ -1,0 +1,147 @@
+.works{
+    width: 100%;
+    height: 100vh;
+    background-color: #EEEFFB;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.works-title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(18 8 81 / 10%);
+}
+
+.works-title h1{
+    margin: 0;
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.6);
+}
+
+.works-title h1 span{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.works-cards{
+    width: 100%;
+    height: 60%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    width: 20%;
+    height: 85%;
+    margin: 0px 20px;
+    padding:10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgb(18 8 81 / 10%);
+    transition: .5s;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(9, 4, 41, 0.404);
+    letter-spacing: 2px;
+}
+
+.cards img{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+
+.cards h2{
+    margin: 10px 0;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.work-btn{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-btn{
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    background: none;
+    border: 4px solid var(--primary-color);
+    color: var(--primary-color);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.w-btn:hover{
+    cursor: pointer;
+    animation: slideBtn 1s infinite ;
+}
+
+@keyframes slideBtn {
+    0%{
+        background: none;
+    }
+    50%{
+        background-color: var(--primary-color);
+        color: white;
+    }
+    100%{
+        background: none;
+    }
+}
+
+@media (max-width:768px) {
+    .works{
+        height: 1500px;
+    }
+
+    .works-title{
+        width: 100%;
+        height: 25%;
+
+    }
+
+    .works-title h1{
+        font-size: 35px;
+        padding: 0 50px;
+    }
+
+    .works-cards{
+        height: 75%;
+        flex-direction: column;
+    }
+
+    .cards{
+        width: 400px;
+        height: 32%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .cards img{
+        border-radius: 5px;
+    }
+
+    .works-btn{
+        height: 10%;
+    }
+}
